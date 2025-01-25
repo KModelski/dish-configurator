@@ -1,0 +1,9 @@
+<main>
+  <router-outlet />
+</main>
+<aside>
+  <app-mode-selector
+    [selectedMode]="selectedMode()"
+    (selectedModeChange)="onSelectionChange($event)"
+  />
+</aside>

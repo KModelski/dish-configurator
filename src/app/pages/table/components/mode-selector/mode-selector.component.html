@@ -1,0 +1,7 @@
+<select (change)="onModeChange($event)">
+  @for (mode of modes(); track mode.value) {
+  <option [value]="mode.value">
+    {{ mode.label }}
+  </option>
+  }
+</select>
